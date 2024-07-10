@@ -1,4 +1,5 @@
 
+using System.Threading;
 using AvaDesktop.Base;
 using NUnit.Framework;
 using OpenQA.Selenium;
@@ -11,10 +12,9 @@ namespace AvaDesktop.Tests
         [Test]
         public void FranceSignUp()
         {
-          
-           IWebElement registerButton = driver.FindElement(By.XPath("//a[contains(text(), 'Register now')]"));
-           registerButton.Click();
-           System.Threading.Thread.Sleep(5000);
+          avaHomePage.OpenRegistrationPopUp();
+          signUpPopUp.FillInSignUpPopUp();
+          Thread.Sleep(5000);
 
         }
 

@@ -1,20 +1,20 @@
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Firefox;
 
 namespace AvaDesktop.Driver;
 
-public class ChromeWebDriver
+public class FirefoxWebDriver
 {
     private static IWebDriver _driver;
 
-    private ChromeWebDriver()
+    private FirefoxWebDriver()
     {
         
     }
 
-    private static ChromeDriver StartDriver()
+    private static FirefoxDriver StartDriver()
     {
-       var driver = new ChromeDriver();
+       var driver = new FirefoxDriver();
         driver.Manage().Window.Maximize();
         return driver;
     }

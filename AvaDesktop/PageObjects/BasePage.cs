@@ -5,5 +5,5 @@ namespace AvaDesktop.PageObjects;
 
 public class BasePage
 {
-    public static IWebDriver driver = ChromeWebDriver.GetDriver();
+    public static IWebDriver driver = FirefoxWebDriver.GetDriver();
 }
