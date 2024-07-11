@@ -3,7 +3,7 @@ using OpenQA.Selenium;
 
 namespace AvaDesktop.PageObjects;
 
-public class SignUpPopUp:BasePage
+public class SignUpPopUpPage:BasePage
 {
     IWebElement emailInput => driver.FindElement(By.Id("input-email"));
     IWebElement passwordInput => driver.FindElement(By.Id("input-password"));
@@ -12,7 +12,7 @@ public class SignUpPopUp:BasePage
     public void FillInSignUpPopUp()
     {
         Waiter.WaitElement(By.Id("input-email"));
-        emailInput.SendKeys("testautomat@dd.com");
+        emailInput.SendKeys(Data.GenerateEmail());
         passwordInput.SendKeys("Password1!");
         submitButton.Click();
     }

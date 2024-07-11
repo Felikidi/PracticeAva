@@ -14,7 +14,9 @@ public class TestBase
 {
     internal IWebDriver driver;
     internal HomePage avaHomePage = new HomePage();
-    internal SignUpPopUp signUpPopUp = new SignUpPopUp();
+    internal SignUpPopUpPage SignUpPopUpPage = new SignUpPopUpPage();
+    internal YourPersDetailsSignUpPage YourPersDetailsSignUpPage = new YourPersDetailsSignUpPage();
+    internal YourFinDetailsPage YourFinDetailsPage = new YourFinDetailsPage();
     [SetUp]
     public void BeforeEach()
     {
