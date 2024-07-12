@@ -15,8 +15,10 @@ public class BasePage
         Random random = new Random();
         PerfomJSClick(element);
         Thread.Sleep(1000);
-        var options = element.FindElements(By.XPath("//div[@role='option']"));
-        options[random.Next(0, options.Count - 1)].Click();
+        var options = element.FindElements(By.XPath("./ancestor::div[3]//div[@role='option']"));
+        // options[random.Next(0, options.Count - 1)].Click();
+        var optionToClick = options[random.Next(0, options.Count - 1)];
+        PerfomJSClick(optionToClick);
     }
 
     public void PerfomJSClick(IWebElement element)

@@ -15,4 +15,19 @@ public static class Waiter
         var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeout));
         wait.Until(ExpectedConditions.ElementIsVisible(element));
     }
+
+    public static bool CheckIfElementExist(By element, int timeout = 30)
+    {
+        try
+        {
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeout));
+            wait.Until(ExpectedConditions.ElementExists(element));
+            return true;
+        }
+        catch (Exception e)
+        {
+            return false;
+        }
+        
+    }
 }

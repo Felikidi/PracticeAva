@@ -52,7 +52,7 @@ public class YourPersDetailsSignUpPage : BasePage
         Waiter.WaitElement(By.XPath($"//span[@class='country-name' and text()='{country}']"));
         Thread.Sleep(1000);
         actions.SendKeys(Keys.Enter).Perform();
-        // driver.FindElement(By.XPath($"//span[@class='country-name' and text()='{country}']")).Click();
+        
         Thread.Sleep(3000);
     }
 

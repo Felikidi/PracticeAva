@@ -14,9 +14,14 @@ public class TestBase
 {
     internal IWebDriver driver;
     internal HomePage avaHomePage = new HomePage();
-    internal SignUpPopUpPage SignUpPopUpPage = new SignUpPopUpPage();
-    internal YourPersDetailsSignUpPage YourPersDetailsSignUpPage = new YourPersDetailsSignUpPage();
-    internal YourFinDetailsPage YourFinDetailsPage = new YourFinDetailsPage();
+    internal SignUpPopUpPage signUpPopUpPage = new SignUpPopUpPage();
+    internal YourPersDetailsSignUpPage yourPersDetailsSignUpPage = new YourPersDetailsSignUpPage();
+    internal YourFinDetailsPage yourFinDetailsPage = new YourFinDetailsPage();
+    internal TraidingExperienceSignUpPage traidingExperienceSignUpPage = new TraidingExperienceSignUpPage();
+    internal TermsAndConditionPage termsAndConditionPage = new TermsAndConditionPage();
+    internal WarningPage warningPage = new WarningPage();
+    internal AlmostTherePage almostTherePage = new AlmostTherePage();
+    internal TutorialPage tutorialPage = new TutorialPage();
     [SetUp]
     public void BeforeEach()
     {
