@@ -10,7 +10,8 @@ public class AlmostTherePage:BasePage
     public void CloseAlmostTherePage()
     {
         Waiter.WaitElement(By.Id("typ-close-icon"));
-        crossButton.Click();
+        PerfomJSClick(crossButton);
+        driver.SwitchTo().DefaultContent();
     }
     
 }

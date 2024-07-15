@@ -30,7 +30,14 @@ public class TestBase
         
         driver.Navigate().GoToUrl("https://www.avatrade.com");
         Thread.Sleep(5000);
-        avaHomePage.AllowCookie();
+        try
+        {
+            avaHomePage.AllowCookie();
+        }
+        catch {}
+        
+        
+        
         
     }
     [TearDown]

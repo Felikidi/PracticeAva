@@ -29,8 +29,8 @@ namespace AvaDesktop.Tests
           tutorialPage.SkipTutorial();
 
         }
-        [TestCase("Afganistan")]
-        public void AfganistanSignUp(string country)
+        [TestCase("Afghanistan")]
+        public void AfghanistanSignUp(string country)
         {
             avaHomePage.OpenRegistrationPopUp();
             signUpPopUpPage.FillInSignUpPopUp();

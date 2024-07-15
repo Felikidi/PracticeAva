@@ -10,8 +10,8 @@ public class WarningPage : BasePage
 
     public void ProccedWarningPopUp()
     {
-        iAgree.Click();
-        completeRegistration.Click();
+        PerfomJSClick(iAgree);
+        PerfomJSClick(completeRegistration);
     }
 
     public bool CheckIfWarningExist()

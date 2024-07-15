@@ -25,6 +25,7 @@ public class YourPersDetailsSignUpPage : BasePage
     public void FillInYourPersDetailsSignUpPage(string country)
     {
         Waiter.WaitElement(By.Id("date-day"),120);
+        Thread.Sleep(3000);
         SelectCountry(country);
         firstName.SendKeys("TestFirstName");
         lastName.SendKeys("TestLastName");
